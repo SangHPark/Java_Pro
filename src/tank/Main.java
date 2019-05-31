@@ -22,9 +22,6 @@ public class Main {
                            a.x = sc.nextInt();
                            a.y = sc.nextInt();
                            a.score = sc.nextInt();
-//                           a.x_rank = i;
-
-//                     tanks[i] = a;
                            tanks[i] = a;
               }
               
