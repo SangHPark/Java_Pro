@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
        static int N, T;
 //       static Tank[] tanks = new Tank[100001];
        
@@ -18,7 +18,7 @@ public class Main {
 		   But before submission, you must remove the freopen function or rewrite comment symbols(//).
 		 */
 		
-		System.setIn(new FileInputStream("C:\\Users\\SDSA\\Downloads\\sample_input_Tank.txt"));
+		System.setIn(new FileInputStream("C:\\Users\\SDSA\\Downloads\\sample_input_Tank1.txt"));
 		
 		/*
 		   Make new scanner from standard input System.in, and read data.

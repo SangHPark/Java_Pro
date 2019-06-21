@@ -1,4 +1,4 @@
-package Picking_Jewels;
+package picking_Jewels;
 import java.util.*;
 
 public class Main5 {
@@ -80,13 +80,13 @@ public class Main5 {
 //		    System.out.println("");
 //		}
 
+		Pick_Jewelery_Stack(0,0);
 
-
-		POSI curr = new POSI();
-		curr.x = 0;
-		curr.y = 0;
-		
-		traverse(curr);
+//		POSI curr = new POSI();
+//		curr.x = 0;
+//		curr.y = 0;
+//		
+//		traverse(curr);
 
 		
 		
@@ -151,6 +151,38 @@ public class Main5 {
 			
 			sum_jewwelery += Integer.parseInt(String.valueOf(Map[next.x][next.y]));
 			GoToEnd(curr.x + SDc[dir], curr.y + SDr[dir], c);
+		}
+		
+		return -1;
+	}
+	
+	private static int Pick_Jewelery_Stack(int i, int j) {
+		Stack<POSI>stk = new Stack<POSI>();
+		
+		POSI start = new POSI();
+		start.x = i;
+		start.y = j;
+		
+		stk.add(start);
+		
+		int sum_jewwelery = 0;
+		while (!stk.isEmpty()) {
+			POSI curr = stk.pop();
+			
+			for (int dir = 0; dir < 2; ++ dir) {
+				POSI next = new POSI();
+				next.x = curr.x + SDc[dir];
+				next.y = curr.y + SDr[dir];
+				if (next.x < 0 || next.x >= N || next.y < 0 || next.y >= M) continue;
+				if (Map[next.x][next.y] == '#') {continue;}
+				
+				if (Picked[next.x][next.y] == 0) {
+					Picked[next.x][next.y] = 1;
+					
+					sum_jewwelery += Integer.parseInt(String.valueOf(Map[next.x][next.y]));
+					stk.add(next);
+				}				
+			}
 		}
 		
 		return -1;

@@ -1,4 +1,4 @@
-package Picking_Jewels;
+package picking_Jewels;
 import java.util.*;
 
 public class Main3 {
