@@ -1,14 +1,28 @@
 package tank;
 
+import java.io.FileInputStream;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
        static int N, T;
 //       static Tank[] tanks = new Tank[100001];
        
-       public static void main(String[] args) {
+       public static void main(String[] args) throws Exception {
+    	   
+		/*
+		   The method below means that the program will read from input.txt, instead of standard(keyboard) input.
+		   To test your program, you may save input data in input.txt file,
+		   and call below method to read from the file when using nextInt() method.
+		   You may remove the comment symbols(//) in the below statement and use it.
+		   But before submission, you must remove the freopen function or rewrite comment symbols(//).
+		 */
+		
+		System.setIn(new FileInputStream("C:\\Users\\SDSA\\Downloads\\sample_input_Tank.txt"));
+		
+		/*
+		   Make new scanner from standard input System.in, and read data.
+		 */		
               Scanner sc = new Scanner(System.in);
               T = sc.nextInt();
               for (int t=1; t<=T; ++t) {

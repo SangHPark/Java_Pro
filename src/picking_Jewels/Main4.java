@@ -1,4 +1,4 @@
-package Picking_Jewels;
+package picking_Jewels;
 import java.util.*;
 
 public class Main4 {
@@ -89,37 +89,17 @@ public class Main4 {
 		curr.idx = 0;
 		curr.val = 'S';
 		
+		traverse(curr,'D');
 		traverse(curr,'R');
-		
-		//Move Right
 
-		
-
-
-		
-		
-		//Start from 'S'
-		
-		
-		//Move to Right
-		//Create Node LinkedList 
-		
-		//check # or inside arrary
-		//No --> KillLinkedList
-		//Yes --> Add node as next node
-		// Move to Down
-		//check # or inside arrary		
-		//No --> KillLinkedList
-		//Yes --> Add node as next node
-		
-	
-		
 		
 	}
 
 	
 	private static void traverse(POSI curr, char dir) {
 		POSI next = new POSI();
+		++order;
+		
 		if (dir == 'R') {
 			next.x = curr.x +  0;
 			next.y = curr.y +  1;
@@ -143,9 +123,8 @@ public class Main4 {
 				
 				steps[order] = a;
 				System.out.println("order and value" + order + " " + steps[order].val);
-				++order;	
-				
 				traverse(next, 'R');
+	
 				traverse(next, 'D');
 			}
 		}

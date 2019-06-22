@@ -1,7 +1,7 @@
-package Picking_Jewels;
+package picking_Jewels;
 import java.util.*;
 
-public class Main2 {
+public class Main {
 
 	static int N, M;
     static char[][] Map = new char[200][200];
@@ -37,34 +37,10 @@ public class Main2 {
 		}
 
 		
-		System.out.println("#" + GoToEnd(0, 0, 'S'));
+		System.out.println("#" + Pick_Jewelery(0, 0, 'S'));
 		
 	}
 
-	private static int GoToEnd(int i, int j, char c) {
-		int sum_jewwelery = 0;
-		POSI curr = new POSI();
-		curr.x = i;
-		curr.y = j;
-
-
-		
-		for (int dir = 0; dir < 2; ++ dir) {
-			POSI next = new POSI();
-			next.x = curr.x + SDc[dir];
-			next.y = curr.y + SDr[dir];
-			
-			if (next.x < 0 || next.x >= N || next.y < 0 || next.y >= M) return -1;
-			if (Map[next.x][next.y] == '#') return -1;
-			
-			if (Map[next.x][next.y] == 'E') return sum_jewwelery;
-			
-			sum_jewwelery += Integer.parseInt(String.valueOf(Map[next.x][next.y]));
-			GoToEnd(curr.x + SDc[dir], curr.y + SDr[dir], c);
-		}
-		
-		return -1;
-	}
 	private static int Pick_Jewelery(int i, int j, char c) {
 		int sum_jewwelery = 0;
 		
