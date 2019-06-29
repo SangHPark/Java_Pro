@@ -89,6 +89,7 @@ public class Solution {
 			return;
 		}
 		
+		
 		for (int k = 0; k < 4; k ++) {
 			int move_i = i + di[k];
 			int move_j = j + dj[k];
