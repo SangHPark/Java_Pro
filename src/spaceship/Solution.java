@@ -93,9 +93,9 @@ public class Solution {
 			int move_i = i + di[k];
 			int move_j = j + dj[k];
 			
-			if (map[move_i][map_j] == 0) { 
-				return
-			}
+//			if (map[move_i][map_j] == 0) { 
+//				return
+//			}
 			dofindzero(move_i,move_j);
 		}
 		
