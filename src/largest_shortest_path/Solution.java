@@ -19,6 +19,7 @@ public class Solution {
 	static int N = 500;
 	static int [][] graph = new int[N][N];
 	static int[] del_order = new int[0];
+	static long[][] dist = new long[0][0];
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -50,8 +51,14 @@ public class Solution {
 			}
 		}
 		
+		dist = new long[N+1][N+1];
 		
-		
+		for (int V=1; V <= N; V++) {
+			for (int i = 1; i <= V; i++) {
+				dist[i][V] = graph[i][V];
+				dist[V][i] = dist[i][V];
+			}
+		}
 		
 //		for (int i=1; i<=testcase; i++) {
 //			for (int j=1; j<=N; j++) {
