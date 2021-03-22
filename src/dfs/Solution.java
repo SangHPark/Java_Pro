@@ -33,6 +33,11 @@ public class Solution {
 			visited[i] = 0;
 		}
 		
+		
+		for (int i = 0; i <V ; i ++) {
+			System.out.println("i = " + i + " value = " + adjList[i]);
+		}		
+
 		dfs(0);
 		
 	}
