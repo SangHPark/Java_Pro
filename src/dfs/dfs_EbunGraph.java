@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class EbunGraph {
+public class dfs_EbunGraph {
 
 	static int T;
 	static int nV;
@@ -18,7 +18,7 @@ public class EbunGraph {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\dfs\\EbunGraph.txt"));
+			System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\dfs\\dfs_EbunGraph.txt"));
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			
 			T = Integer.parseInt(br.readLine());

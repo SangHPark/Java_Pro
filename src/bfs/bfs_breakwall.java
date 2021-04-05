@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class breakwall {
+public class bfs_breakwall {
 
 	static int N;
 	static int M;
@@ -26,7 +26,7 @@ public class breakwall {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\bfs\\breakwall.txt"));
+			System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\bfs\\bfs_breakwall.txt"));
  
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // Read data in input file or external input.		
 			
