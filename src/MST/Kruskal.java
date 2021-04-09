@@ -1,4 +1,4 @@
-package Union_Find;
+package MST;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;

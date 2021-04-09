@@ -1,4 +1,4 @@
-package Union_Find;
+package MST;
 
 public class Solution {
 	static int N = 10;

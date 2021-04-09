@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class Solution_2 {
+public class dijkstra_pq {
 
 	static int nV;
 	static int nE;

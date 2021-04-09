@@ -1,4 +1,4 @@
-package Union_Find;
+package MST;
 
 public class Edge implements Comparable<Edge>{
 	public int[] node = new int[2];
