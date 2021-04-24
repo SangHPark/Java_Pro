@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class baekjoon_2252 {
+public class baekjoon_2252_3 {
 	static long _start = 0;
 	static void printElapse() {
 		System.out.println(">> " + (System.currentTimeMillis() - _start) + "ms");
@@ -15,18 +15,8 @@ public class baekjoon_2252 {
 	
 	static int N, M;
 	static int[] inDegree;
-	static ArrayList<Edge> alist;
+	static ArrayList<Integer>[] myarraylist;
 	
-	static class Edge {
-		int from;
-		int to;
-		
-		Edge(int from, int to) {
-			this.from = from;
-			this.to = to;
-		}
-		
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		_start = System.currentTimeMillis(); // set application start time for test which do not mandatory for exam.
@@ -38,7 +28,11 @@ public class baekjoon_2252 {
 			N = Integer.parseInt(input[0]);
 			M = Integer.parseInt(input[1]);
 			
-			alist = new ArrayList<Edge>();
+			myarraylist = new ArrayList[N+1];
+			
+			for (int i = 0; i < N + 1; i++) {
+				myarraylist[i] = new ArrayList<Integer>();
+			}
 			
 			inDegree = new int[N+1];
 			
@@ -50,7 +44,8 @@ public class baekjoon_2252 {
 				int a = Integer.parseInt(input2[0]);
 				int b = Integer.parseInt(input2[1]);
 				
-				alist.add(new Edge(a, b));
+				myarraylist[a].add(b);
+				
 				inDegree[b] ++;
 			}
 			
@@ -70,19 +65,17 @@ public class baekjoon_2252 {
 				int x = q.poll();
 				result[i] = x;
 				
-				for (int j = 0; j < M; j ++ ) {
-					if (alist.get(j).from == x) {
-						int to = alist.get(j).to;
+				for (int j = 0; j < myarraylist[x].size() ; j ++ ) {
+						int to = myarraylist[x].get(j);
 						inDegree[to] --;
 						//새롭게 진입차수가 0이된 정점을 큐에 삽입합니다.
 						if (inDegree[to] == 0) {
 							q.add(to);
 						}
-					}
 				}
 			}
 			
-
+			
 			for (int i = 1; i < N+1; i++) {
 				System.out.print(result[i] + " ");
 			}

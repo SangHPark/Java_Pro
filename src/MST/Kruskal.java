@@ -14,7 +14,7 @@ public class Kruskal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\Union_Find\\Kruskal.txt"));
+			System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\MST\\baekjoon_1922.txt"));
 			Scanner sc = new Scanner(System.in);
 		
 			
@@ -48,6 +48,7 @@ public class Kruskal {
 			}
 			
 			//before union parent
+			System.out.println("Before");
 			for (int i = 0; i < nV; i ++) {
 				System.out.println("i = " + i + " Parent = " + getParent(i));
 			}			
@@ -62,7 +63,8 @@ public class Kruskal {
 
 			}
 
-			//after union parent			
+			//after union parent		
+			System.out.println("After");
 			for (int i = 0; i < nV; i ++) {
 				System.out.println("i = " + i + " Parent = " + getParent(i));
 			}			
