@@ -1,6 +1,6 @@
 package boggle_game;
 
-public class Solution {
+public class Geeks_Solution {
 	static final String [] dictionary = {"GEEKS","FOR","QUIZ","GO"};
 	static final int M = 3, N = 3;
 	static final int n = dictionary.length;
