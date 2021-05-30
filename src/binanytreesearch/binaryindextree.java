@@ -10,6 +10,7 @@ public class binaryindextree {
 	static int N;
 	static int M;
 	static int K;
+	static int T;
 	
 	static long[] tree;
 	static long[] arr;
@@ -18,6 +19,11 @@ public class binaryindextree {
 		// TODO Auto-generated method stub
 		System.setIn(new FileInputStream("C:\\Users\\SDSA\\eclipse-workspace-Study\\Java_Pro\\src\\binanytreesearch\\indextree.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		T = Integer.parseInt(br.readLine());
+		
+		for (int t = 1; t < T+ 1; t++) {
+			
 		
 		StringTokenizer st = null;
 		
@@ -48,15 +54,16 @@ public class binaryindextree {
 				update(b, c - arr[b]);
 				arr[b] = c;
 			} 
-//			else {
-//				System.out.println(prefix_sum(c) - prefix_sum(b-1));
-//			}
+			else {
+				System.out.println(prefix_sum(c) - prefix_sum(b-1));
+			}
 		}
 
 //		System.out.println(" ");
 //        for (int i = 1; i < N+1; i ++) {
 //        	System.out.print(tree[i] +" ");
 //        }
+		}
 	}
 	
 	static void update(int i, long dif) {
