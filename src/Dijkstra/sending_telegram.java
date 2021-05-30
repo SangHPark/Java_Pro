@@ -104,5 +104,3 @@ public class sending_telegram {
 
 }
 
-
->>>>>>> branch 'master' of https://github.com/SangHPark/Java_Pro.git
