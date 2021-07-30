@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<Java_Pro>",
+            "request": "launch",
+            "mainClass": "Moving_Population.Main",
+            "projectName": "Java_Pro"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<Java_Pro>(1)",
+            "request": "launch",
+            "mainClass": "Picking_Jewels.Main",
+            "projectName": "Java_Pro"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main2<Java_Pro>",
+            "request": "launch",
+            "mainClass": "Picking_Jewels.Main2",
+            "projectName": "Java_Pro"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main3<Java_Pro>",
+            "request": "launch",
+            "mainClass": "Picking_Jewels.Main3",
+            "projectName": "Java_Pro"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main4<Java_Pro>",
+            "request": "launch",
+            "mainClass": "Picking_Jewels.Main4",
+            "projectName": "Java_Pro"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main5<Java_Pro>",
+            "request": "launch",
+            "mainClass": "Picking_Jewels.Main5",
+            "projectName": "Java_Pro"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<Java_Pro>(2)",
+            "request": "launch",
+            "mainClass": "tank.Main",
+            "projectName": "Java_Pro"
+        }
+    ]
+}
